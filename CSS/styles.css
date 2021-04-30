@@ -1,0 +1,77 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    margin: 0;
+    background-image: url("../IMG/fondo\ 3.png");
+    background-attachment: fixed;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#encabezado h1 strong {
+    color: white;
+    font-size: 6.5vw;
+}
+
+#encabezado h1 {
+    text-align: center;
+}
+
+#barra {
+    font-size: 2vw;
+}
+
+#seccion1 {
+    float: left;
+}
+
+#seccion1 img {
+    border-radius: 0.9vw;
+}
+
+.relleno-lateral {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.seccion1 img {
+    width: 100%;
+}

@@ -4,6 +4,9 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 li {
@@ -53,18 +56,21 @@ body {
 
 #encabezado h1 {
     text-align: center;
+    padding-bottom: 4vw;
 }
 
 #barra {
     font-size: 2vw;
+    padding-bottom: 4vw;
 }
 
 #seccion1 {
-    float: left;
+    color: white;
 }
 
 #seccion1 img {
     border-radius: 0.9vw;
+    width: 90%;
 }
 
 .relleno-lateral {
@@ -72,6 +78,105 @@ body {
     padding-right: 2vw;
 }
 
-.seccion1 img {
-    width: 100%;
+.column1 {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-top: -4vw;
+}
+
+.column1 h1 {
+    font-size: 5vw;
+    color: black;
+}
+
+.column1 h3 {
+    font-size: 1.8vw;
+    background-color: black;
+    padding: 1vw;
+}
+
+#seccion2 {
+    color: white;
+    padding-top: 7vw;
+}
+
+#seccion2 iframe {
+    display: block;
+    width: 50vw;
+    height: 37.3vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2vw;
+}
+
+#seccion2 h2 {
+    font-size: 9vw;
+    text-align: center;
+}
+
+#seccion3 {
+    padding-top: 2vw;
+}
+
+#seccion3 h2 {
+    font-size: 8vw;
+}
+
+.column2 {
+    width: 50%;
+    float: left;
+}
+
+.column2 img {
+    width: 45%;
+    border-radius: 1vw;
+    text-align: center;
+    float: left;
+}
+
+#seccion3 h3 {
+    font-size: 2.4vw;
+    color: white;
+}
+
+#seccion3 h4 {
+    font-size: 1.6vw;
+    background-color: black;
+    color: white;
+    padding-left: 0.6vw;
+    padding-top: 0.6vw;
+}
+
+.column3 {
+    width: 50%;
+    float: left;
+}
+
+.column3 img {
+    width: 70%;
+    border-radius: 1vw;
+    padding-top: 10vw;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#seccion4 {
+    padding-top: 6vw;
+}
+
+#seccion4 h2 {
+    font-size: 7vw;
+    color: white;
+    text-align: center;
+}
+
+#seccion4 h3 {
+    font-size: 3vw;
+    text-align: center;
+    background-color: white;
 }

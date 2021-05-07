@@ -67,7 +67,7 @@
         
         #seccion1 img {
             border-radius: 0.9vw;
-            width: 90%;
+            width: 50%;
         }
         
         .relleno-lateral {
@@ -81,6 +81,8 @@
             text-align: center;
             padding-top: -4vw;
         }
+        
+        .column1 img {}
         
         .column1 h1 {
             font-size: 5vw;
@@ -310,21 +312,48 @@
         .column5 {
             width: 50%;
             float: left;
+            padding-left: 8vw;
         }
         
         #seccion7 {
             background-color: black;
             color: white;
+            padding-bottom: 2vw;
+            padding-top: 2vw;
+        }
+        
+        #seccion7 p {
+            font-size: 1.2vw;
+        }
+        
+        #seccion7 h5 {
+            font-size: 1.5vw;
+            margin: -0.1vw;
         }
         
         #seccion6 h6 {
             font-size: 2vw;
             margin: -1.5vw;
+            color: white;
         }
         
         #seccion6 h1 {
             font-size: 7vw;
             text-align: center;
+            color: white;
+        }
+        
+        .maps {
+            text-align: center;
+        }
+        
+        .maps iframe {
+            display: block;
+            width: 50vw;
+            height: 37.3vw;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 2vw;
         }
         /* <div id="seccion6" class="relleno-lateral">
         <h6 class="letra-barras">Autonomia</h6>

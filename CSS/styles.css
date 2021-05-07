@@ -1,362 +1,677 @@
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            border-bottom: 5px solid white;
-        }
-        
-        li {
-            float: left;
-        }
-        
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        /* Change the link color to #111 (black) on hover */
-        
-        li a:hover {
-            background-color: #111;
-        }
-        
-        * {
-            box-sizing: border-box;
-            /* font family */
-            font-family: 'Lobster', cursive;
-        }
-        
-        body {
-            margin: 0;
-            background-image: url("../IMG/fondo\ 3.png");
-            background-attachment: fixed;
-        }
-        /* Clear floats after the columns */
-        
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        
-        #encabezado h1 strong {
-            color: white;
-            font-size: 6.5vw;
-        }
-        
-        #encabezado h1 {
-            text-align: center;
-            padding-bottom: 4vw;
-        }
-        
-        #barra {
-            font-size: 2vw;
-            padding-bottom: 4vw;
-        }
-        
-        #seccion1 {
-            color: white;
-        }
-        
-        #seccion1 img {
-            border-radius: 0.9vw;
-            width: 50%;
-        }
-        
-        .relleno-lateral {
-            padding-left: 2vw;
-            padding-right: 2vw;
-        }
-        
-        .column1 {
-            width: 50%;
-            float: left;
-            text-align: center;
-            padding-top: -4vw;
-        }
-        
-        .column1 img {}
-        
-        .column1 h1 {
-            font-size: 5vw;
-            color: black;
-        }
-        
-        .column1 h3 {
-            font-size: 1.8vw;
-            background-color: black;
-            padding: 1vw;
-        }
-        
-        #seccion2 {
-            color: white;
-            padding-top: 7vw;
-        }
-        
-        #seccion2 iframe {
-            display: block;
-            width: 50vw;
-            height: 37.3vw;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 2vw;
-        }
-        
-        #seccion2 h2 {
-            font-size: 9vw;
-            text-align: center;
-        }
-        
-        #seccion3 {
-            padding-top: 2vw;
-        }
-        
-        #seccion3 h2 {
-            font-size: 8vw;
-        }
-        
-        .column2 {
-            width: 50%;
-            float: left;
-        }
-        
-        .column2 img {
-            width: 45%;
-            border-radius: 1vw;
-            text-align: center;
-            float: left;
-        }
-        
-        #seccion3 h3 {
-            font-size: 2.4vw;
-            color: white;
-        }
-        
-        #seccion3 h4 {
-            font-size: 1.6vw;
-            background-color: black;
-            color: white;
-            padding-left: 0.6vw;
-            padding-top: 0.6vw;
-        }
-        
-        .column3 {
-            width: 50%;
-            float: left;
-        }
-        
-        .column3 img {
-            width: 70%;
-            border-radius: 1vw;
-            padding-top: 10vw;
-        }
-        
-        .flex {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        #seccion4 {
-            padding-top: 6vw;
-        }
-        
-        #seccion4 h2 {
-            font-size: 7vw;
-            color: white;
-            text-align: center;
-        }
-        
-        #seccion4 h3 {
-            font-size: 2vw;
-            text-align: center;
-            background-color: white;
-        }
-        
-        #seccion img {
-            width: 50%;
-        }
-        
-        .column4 img {
-            width: 90%;
-            float: left;
-            border-radius: 1vw;
-            padding-top: -1vw;
-        }
-        
-        #seccion5 {
-            padding-top: 5vw;
-        }
-        
-        #seccion5 h2 {
-            font-size: 7vw;
-            color: white;
-            text-align: center;
-        }
-        
-        #seccion6 {}
-        
-        .letra-barras {
-            font-size: 2vw;
-            margin: 1vw;
-            color: white;
-        }
-        
-        .progress-bar {
-            background-color: #1a1a1a;
-            height: 1.8vw;
-            padding: 0.2vw;
-            width: 20vw;
-            margin: 2vw 0;
-            border-radius: 0.4vw;
-            box-shadow: 0 0.1vw 0.3vw #000 inset, 0 1px 0 #444;
-        }
-        
-        .progress-bar span {
-            display: inline-block;
-            height: 100%;
-            border-radius: 0.3vw;
-            box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
-            transition: width .4s ease-in-out;
-            background-color: #ccc;
-        }
-        /**** GRADIENTS ****/
-        
-        .blue span {
-            background-color: #34c2e3;
-        }
-        
-        .orange span {
-            background-color: #fecf23;
-            background-image: linear-gradient(top, #fecf23, #fd9215);
-        }
-        
-        .green span {
-            background-color: #a5df41;
-            background-image: linear-gradient(top, #a5df41, #4ca916);
-        }
-        /**** STRIPES ****/
-        
-        .stripes span {
-            background-size: 2vw 2vw;
-            background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-            animation: animate-stripes 3s linear infinite;
-        }
-        
-        @keyframes animate-stripes {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: 60px 0;
-            }
-        }
-        /**** SHINE ****/
-        
-        .shine span {
-            position: relative;
-        }
-        
-        .shine span::after {
-            content: '';
-            opacity: 0;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: #fff;
-            border-radius: 0.2vw;
-            animation: animate-shine 2s ease-out infinite;
-        }
-        
-        @keyframes animate-shine {
-            0% {
-                opacity: 0;
-                width: 0;
-            }
-            50% {
-                opacity: .5;
-            }
-            100% {
-                opacity: 0;
-                width: 95%;
-            }
-        }
-        /**** GLOW ****/
-        
-        .glow span {
-            box-shadow: 0 0.3vw 0.3vw rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
-            animation: animate-glow 1s ease-out infinite;
-        }
-        
-        @keyframes animate-glow {
-            0% {
-                box-shadow: 0 0.3vw 0.3vw rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
-            }
-            50% {
-                box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;
-            }
-            100% {
-                box-shadow: 0 0.3vw 0.3vw rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
-            }
-        }
-        
-        .column5 {
-            width: 50%;
-            float: left;
-            padding-left: 8vw;
-        }
-        
-        #seccion7 {
-            background-color: black;
-            color: white;
-            padding-bottom: 2vw;
-            padding-top: 2vw;
-        }
-        
-        #seccion7 p {
-            font-size: 1.2vw;
-        }
-        
-        #seccion7 h5 {
-            font-size: 1.5vw;
-            margin: -0.1vw;
-        }
-        
-        #seccion6 h6 {
-            font-size: 2vw;
-            margin: -1.5vw;
-            color: white;
-        }
-        
-        #seccion6 h1 {
-            font-size: 7vw;
-            text-align: center;
-            color: white;
-        }
-        
-        .maps {
-            text-align: center;
-        }
-        
-        .maps iframe {
-            display: block;
-            width: 50vw;
-            height: 37.3vw;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 2vw;
-        }
-        /* <div id="seccion6" class="relleno-lateral">
-        <h6 class="letra-barras">Autonomia</h6>
-        <div class="progress-bar blue stripes shine">
-            <span style="width: 90%"></span>
-        </div>*/
+                        ul {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                            overflow: hidden;
+                            background-color: #333;
+                            position: fixed;
+                            top: 0;
+                            width: 100%;
+                            border-bottom: 5px solid white;
+                        }
+                        
+                        li {
+                            float: left;
+                        }
+                        
+                        li a {
+                            display: block;
+                            color: white;
+                            text-align: center;
+                            padding: 14px 16px;
+                            text-decoration: none;
+                        }
+                        /* Change the link color to #111 (black) on hover */
+                        
+                        li a:hover {
+                            background-color: #111;
+                        }
+                        
+                        * {
+                            box-sizing: border-box;
+                            /* font family */
+                            font-family: 'Lobster', cursive;
+                        }
+                        
+                        body {
+                            margin: 0;
+                            background-image: url("../IMG/fondo\ 3.png");
+                            background-attachment: fixed;
+                        }
+                        /* Clear floats after the columns */
+                        
+                        .row:after {
+                            content: "";
+                            display: table;
+                            clear: both;
+                        }
+                        
+                        #encabezado h1 strong {
+                            color: white;
+                            font-size: 6.5vw;
+                        }
+                        
+                        #encabezado h1 {
+                            text-align: center;
+                            padding-bottom: 4vw;
+                        }
+                        
+                        #barra {
+                            font-size: 2vw;
+                            padding-bottom: 4vw;
+                        }
+                        
+                        #seccion1 {
+                            color: white;
+                        }
+                        
+                        #seccion1 img {
+                            border-radius: 0.9vw;
+                            width: 50%;
+                        }
+                        
+                        .relleno-lateral {
+                            padding-left: 2vw;
+                            padding-right: 2vw;
+                        }
+                        
+                        .column1 {
+                            width: 50%;
+                            float: left;
+                            text-align: center;
+                            padding-top: -4vw;
+                        }
+                        
+                        .column1 img {}
+                        
+                        .column1 h1 {
+                            font-size: 5vw;
+                            color: black;
+                        }
+                        
+                        .column1 h3 {
+                            font-size: 1.8vw;
+                            background-color: black;
+                            padding: 1vw;
+                        }
+                        
+                        #seccion2 {
+                            color: white;
+                            padding-top: 7vw;
+                        }
+                        
+                        #seccion2 iframe {
+                            display: block;
+                            width: 50vw;
+                            height: 37.3vw;
+                            margin-left: auto;
+                            margin-right: auto;
+                            padding-bottom: 2vw;
+                        }
+                        
+                        #seccion2 h2 {
+                            font-size: 9vw;
+                            text-align: center;
+                        }
+                        
+                        #seccion3 {
+                            padding-top: 2vw;
+                        }
+                        
+                        #seccion3 h2 {
+                            font-size: 8vw;
+                        }
+                        
+                        .column2 {
+                            width: 50%;
+                            float: left;
+                        }
+                        
+                        .column2 img {
+                            width: 45%;
+                            border-radius: 1vw;
+                            text-align: center;
+                            float: left;
+                        }
+                        
+                        #seccion3 h3 {
+                            font-size: 2.4vw;
+                            color: white;
+                        }
+                        
+                        #seccion3 h4 {
+                            font-size: 1.6vw;
+                            background-color: black;
+                            color: white;
+                            padding-left: 0.6vw;
+                            padding-top: 0.6vw;
+                        }
+                        
+                        .column3 {
+                            width: 50%;
+                            float: left;
+                        }
+                        
+                        .column3 img {
+                            width: 70%;
+                            border-radius: 1vw;
+                            padding-top: 10vw;
+                        }
+                        
+                        html {
+                            scroll-behavior: smooth;
+                        }
+                        
+                        .flex {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        
+                        #seccion4 {
+                            padding-top: 6vw;
+                        }
+                        
+                        #seccion4 h2 {
+                            font-size: 7vw;
+                            color: white;
+                            text-align: center;
+                        }
+                        
+                        #seccion4 h3 {
+                            font-size: 2vw;
+                            text-align: center;
+                            background-color: white;
+                        }
+                        
+                        #seccion img {
+                            width: 50%;
+                        }
+                        
+                        .column4 img {
+                            width: 90%;
+                            float: left;
+                            border-radius: 1vw;
+                            padding-top: -1vw;
+                        }
+                        
+                        #seccion5 {
+                            padding-top: 5vw;
+                        }
+                        
+                        #seccion5 h2 {
+                            font-size: 7vw;
+                            color: white;
+                            text-align: center;
+                        }
+                        
+                        #seccion6 {}
+                        
+                        .letra-barras {
+                            font-size: 2vw;
+                            margin: 1vw;
+                            color: white;
+                        }
+                        
+                        .progress-bar {
+                            background-color: #1a1a1a;
+                            height: 1.8vw;
+                            padding: 0.2vw;
+                            width: 20vw;
+                            margin: 2vw 0;
+                            border-radius: 0.4vw;
+                            box-shadow: 0 0.1vw 0.3vw #000 inset, 0 1px 0 #444;
+                        }
+                        
+                        .progress-bar span {
+                            display: inline-block;
+                            height: 100%;
+                            border-radius: 0.3vw;
+                            box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+                            transition: width .4s ease-in-out;
+                            background-color: #ccc;
+                        }
+                        /**** GRADIENTS ****/
+                        
+                        .blue span {
+                            background-color: #34c2e3;
+                        }
+                        
+                        .orange span {
+                            background-color: #fecf23;
+                            background-image: linear-gradient(top, #fecf23, #fd9215);
+                        }
+                        
+                        .green span {
+                            background-color: #a5df41;
+                            background-image: linear-gradient(top, #a5df41, #4ca916);
+                        }
+                        /**** STRIPES ****/
+                        
+                        .stripes span {
+                            background-size: 2vw 2vw;
+                            background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+                            animation: animate-stripes 3s linear infinite;
+                        }
+                        
+                        @keyframes animate-stripes {
+                            0% {
+                                background-position: 0 0;
+                            }
+                            100% {
+                                background-position: 60px 0;
+                            }
+                        }
+                        /**** SHINE ****/
+                        
+                        .shine span {
+                            position: relative;
+                        }
+                        
+                        .shine span::after {
+                            content: '';
+                            opacity: 0;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            background: #fff;
+                            border-radius: 0.2vw;
+                            animation: animate-shine 2s ease-out infinite;
+                        }
+                        
+                        @keyframes animate-shine {
+                            0% {
+                                opacity: 0;
+                                width: 0;
+                            }
+                            50% {
+                                opacity: .5;
+                            }
+                            100% {
+                                opacity: 0;
+                                width: 95%;
+                            }
+                        }
+                        /**** GLOW ****/
+                        
+                        .glow span {
+                            box-shadow: 0 0.3vw 0.3vw rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+                            animation: animate-glow 1s ease-out infinite;
+                        }
+                        
+                        @keyframes animate-glow {
+                            0% {
+                                box-shadow: 0 0.3vw 0.3vw rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+                            }
+                            50% {
+                                box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;
+                            }
+                            100% {
+                                box-shadow: 0 0.3vw 0.3vw rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+                            }
+                        }
+                        
+                        .column5 {
+                            width: 50%;
+                            float: left;
+                            padding-left: 8vw;
+                        }
+                        
+                        #seccion7 {
+                            background-color: black;
+                            color: white;
+                            padding-bottom: 2vw;
+                            padding-top: 2vw;
+                        }
+                        
+                        #seccion7 p {
+                            font-size: 1.2vw;
+                        }
+                        
+                        #seccion7 h5 {
+                            font-size: 1.5vw;
+                            margin: -0.1vw;
+                        }
+                        
+                        #seccion6 h6 {
+                            font-size: 2vw;
+                            margin: -1.5vw;
+                            color: white;
+                        }
+                        
+                        #seccion6 h1 {
+                            font-size: 7vw;
+                            text-align: center;
+                            color: white;
+                        }
+                        
+                        .maps {
+                            text-align: center;
+                        }
+                        
+                        .maps iframe {
+                            display: block;
+                            width: 50vw;
+                            height: 37.3vw;
+                            margin-left: auto;
+                            margin-right: auto;
+                            padding-bottom: 2vw;
+                        }
+                        
+                        @media screen and (max-width:750px) {
+                            .flex:not(#header) {
+                                display: block;
+                            }
+                            ul {
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                                overflow: hidden;
+                                background-color: #333;
+                                position: fixed;
+                                top: 0;
+                                width: 100%;
+                                border-bottom: 5px solid white;
+                            }
+                            li {
+                                float: left;
+                            }
+                            li a {
+                                display: block;
+                                color: white;
+                                text-align: center;
+                                padding: 14px 16px;
+                                text-decoration: none;
+                            }
+                            /* Change the link color to #111 (black) on hover */
+                            li a:hover {
+                                background-color: #111;
+                            }
+                            * {
+                                box-sizing: border-box;
+                                /* font family */
+                                font-family: 'Lobster', cursive;
+                            }
+                            body {
+                                margin: 0;
+                                background-image: url("../IMG/fondo\ 3.png");
+                                background-attachment: fixed;
+                            }
+                            /* Clear floats after the columns */
+                            .row:after {
+                                content: "";
+                                display: table;
+                                clear: both;
+                            }
+                            #encabezado h1 strong {
+                                color: white;
+                                font-size: 10.5vw;
+                            }
+                            #encabezado h1 {
+                                text-align: center;
+                                padding-bottom: 4vw;
+                            }
+                            #barra {
+                                font-size: 3vw;
+                                padding-bottom: 6vw;
+                            }
+                            #seccion1 {
+                                color: white;
+                            }
+                            #seccion1 img {
+                                border-radius: 0.9vw;
+                                margin-top: 10vw;
+                                width: 90%;
+                                height: 60vw;
+                            }
+                            .relleno-lateral {
+                                padding-left: 2vw;
+                                padding-right: 2vw;
+                            }
+                            .column1 {
+                                width: 50%;
+                                float: left;
+                                text-align: center;
+                                padding-top: -4vw;
+                            }
+                            .column1 img {}
+                            .column1 h1 {
+                                font-size: 5vw;
+                                color: black;
+                            }
+                            .column1 h3 {
+                                font-size: 3.8vw;
+                                background-color: black;
+                                padding: 1vw;
+                            }
+                            #seccion2 {
+                                color: white;
+                                padding-top: 7vw;
+                            }
+                            #seccion2 iframe {
+                                display: block;
+                                width: 90vw;
+                                height: 50.3vw;
+                                margin-left: auto;
+                                margin-right: auto;
+                                padding-bottom: 2vw;
+                            }
+                            #seccion2 h2 {
+                                font-size: 10vw;
+                                text-align: center;
+                            }
+                            #seccion3 {
+                                padding-top: 2vw;
+                            }
+                            #seccion3 h2 {
+                                font-size: 9vw;
+                            }
+                            .column2 {
+                                width: 100%;
+                                float: left;
+                                text-align: center;
+                            }
+                            .column2 img {
+                                width: 30%;
+                                border-radius: 1vw;
+                                text-align: center;
+                                float: left;
+                            }
+                            #seccion3 h3 {
+                                font-size: 5.4vw;
+                                color: white;
+                            }
+                            #seccion3 h4 {
+                                font-size: 4vw;
+                                background-color: black;
+                                color: white;
+                                padding-left: 0.6vw;
+                                padding-top: 0.6vw;
+                            }
+                            .column3 {
+                                width: 100%;
+                                float: left;
+                            }
+                            .column3 img {
+                                width: 70%;
+                                border-radius: 1vw;
+                                padding-top: 10vw;
+                            }
+                            html {
+                                scroll-behavior: smooth;
+                            }
+                            .flex {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            #seccion4 {
+                                padding-top: 6vw;
+                            }
+                            #seccion4 h2 {
+                                font-size: 12vw;
+                                color: white;
+                                text-align: center;
+                            }
+                            #seccion4 h3 {
+                                font-size: 6vw;
+                                text-align: center;
+                                background-color: white;
+                            }
+                            #seccion img {
+                                width: 90%;
+                            }
+                            .column4 img {
+                                width: 100%;
+                                float: left;
+                                border-radius: 1vw;
+                                padding-top: -1vw;
+                                padding-bottom: 5vw;
+                            }
+                            #seccion5 {
+                                padding-top: 5vw;
+                            }
+                            #seccion5 h2 {
+                                font-size: 7vw;
+                                color: white;
+                                text-align: center;
+                            }
+                            #seccion6 {
+                                display: none;
+                            }
+                            .letra-barras {
+                                font-size: 2vw;
+                                margin: 1vw;
+                                color: white;
+                            }
+                            .progress-bar {
+                                background-color: #1a1a1a;
+                                height: 1.8vw;
+                                padding: 0.2vw;
+                                width: 20vw;
+                                margin: 2vw 0;
+                                border-radius: 0.4vw;
+                                box-shadow: 0 0.1vw 0.3vw #000 inset, 0 1px 0 #444;
+                            }
+                            .progress-bar span {
+                                display: inline-block;
+                                height: 100%;
+                                border-radius: 0.3vw;
+                                box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+                                transition: width .4s ease-in-out;
+                                background-color: #ccc;
+                            }
+                            /**** GRADIENTS ****/
+                            .blue span {
+                                background-color: #34c2e3;
+                            }
+                            .orange span {
+                                background-color: #fecf23;
+                                background-image: linear-gradient(top, #fecf23, #fd9215);
+                            }
+                            .green span {
+                                background-color: #a5df41;
+                                background-image: linear-gradient(top, #a5df41, #4ca916);
+                            }
+                            /**** STRIPES ****/
+                            .stripes span {
+                                background-size: 2vw 2vw;
+                                background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+                                animation: animate-stripes 3s linear infinite;
+                            }
+                            @keyframes animate-stripes {
+                                0% {
+                                    background-position: 0 0;
+                                }
+                                100% {
+                                    background-position: 60px 0;
+                                }
+                            }
+                            /**** SHINE ****/
+                            .shine span {
+                                position: relative;
+                            }
+                            .shine span::after {
+                                content: '';
+                                opacity: 0;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                background: #fff;
+                                border-radius: 0.2vw;
+                                animation: animate-shine 2s ease-out infinite;
+                            }
+                            @keyframes animate-shine {
+                                0% {
+                                    opacity: 0;
+                                    width: 0;
+                                }
+                                50% {
+                                    opacity: .5;
+                                }
+                                100% {
+                                    opacity: 0;
+                                    width: 95%;
+                                }
+                            }
+                            /**** GLOW ****/
+                            .glow span {
+                                box-shadow: 0 0.3vw 0.3vw rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+                                animation: animate-glow 1s ease-out infinite;
+                            }
+                            @keyframes animate-glow {
+                                0% {
+                                    box-shadow: 0 0.3vw 0.3vw rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+                                }
+                                50% {
+                                    box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;
+                                }
+                                100% {
+                                    box-shadow: 0 0.3vw 0.3vw rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+                                }
+                            }
+                            .column5 {
+                                width: 50%;
+                                float: left;
+                                padding-left: 8vw;
+                            }
+                            #seccion7 {
+                                background-color: black;
+                                color: white;
+                                padding-bottom: 2vw;
+                                padding-top: 2vw;
+                            }
+                            #seccion7 p {
+                                font-size: 4.2vw;
+                            }
+                            #seccion7 h5 {
+                                font-size: 7.5vw;
+                                margin: -0.1vw;
+                            }
+                            #seccion6 h6 {
+                                font-size: 2vw;
+                                margin: -1.5vw;
+                                color: white;
+                            }
+                            #seccion6 h1 {
+                                font-size: 7vw;
+                                text-align: center;
+                                color: white;
+                            }
+                            .maps {
+                                text-align: center;
+                            }
+                            .maps iframe {
+                                display: block;
+                                width: 90vw;
+                                height: 67.3vw;
+                                margin-left: auto;
+                                margin-right: auto;
+                                padding-bottom: 2vw;
+                                margin-top: 2vw;
+                            }
+                        }
